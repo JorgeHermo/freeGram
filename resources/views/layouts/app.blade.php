@@ -20,9 +20,14 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img src="/svg/freeCodeCampLogo.svg" alt="freeGram Logo" style="height: 25px; border-right: 1px solid #333;" class="p-1">
+                    </div>
+                <div class="p-1 pt-2">freeGram</div>
+                </div>
+            </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
