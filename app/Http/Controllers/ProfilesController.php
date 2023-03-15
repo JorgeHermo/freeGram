@@ -9,6 +9,6 @@ class ProfilesController extends Controller
 {
     public function index(User $user)
     {
-        return view('home', ['user' => $user]);
+        return view('profiles/index', ['user' => $user]);
     }
 }
