@@ -21,7 +21,7 @@ class ProfilePolicy
      */
     public function view(User $user, Profile $profile): bool
     {
-        return $user->id == $profile->user_id;
+        //
     }
 
     /**
@@ -37,7 +37,7 @@ class ProfilePolicy
      */
     public function update(User $user, Profile $profile): bool
     {
-        //
+        return $user->id == $profile->user_id;
     }
 
     /**
